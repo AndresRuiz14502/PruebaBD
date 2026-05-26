@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+:root {
+  /* Material Design 3 Color System - TechServe Pro Theme */
+  --on-tertiary-fixed: #0b1c30;
+  --on-secondary-container: #006172;
+  --secondary-container: #57dffe;
+  --secondary: #00687a;
+  --on-error: #ffffff;
+  --on-primary: #ffffff;
+  --surface-container-low: #f6f3f5;
+  --error-container: #ffdad6;
+  --on-tertiary-fixed-variant: #38485d;
+  --on-primary-fixed: #131b2e;
+  --on-primary-fixed-variant: #3f465c;
+  --tertiary: #000000;
+  --on-secondary-fixed-variant: #004e5c;
+  --secondary-fixed-dim: #4cd7f6;
+  --on-error-container: #93000a;
+  --primary: #000000;
+  --outline: #76777d;
+  --on-background: #1b1b1d;
+  --inverse-primary: #bec6e0;
+  --surface-container-highest: #e4e2e4;
+  --surface-tint: #565e74;
+  --secondary-fixed: #acedff;
+  --primary-fixed: #dae2fd;
+  --on-primary-container: #7c839b;
+  --on-tertiary-container: #75859d;
+  --tertiary-fixed: #d3e4fe;
+  --on-surface-variant: #45464d;
+  --inverse-surface: #303032;
+  --inverse-on-surface: #f3f0f2;
+  --surface-variant: #e4e2e4;
+  --surface: #fcf8fa;
+  --surface-container-high: #eae7e9;
+  --tertiary-fixed-dim: #b7c8e1;
+  --on-tertiary: #ffffff;
+  --on-secondary: #ffffff;
+  --surface-container: #f0edef;
+  --on-secondary-fixed: #001f26;
+  --surface-bright: #fcf8fa;
+  --primary-container: #131b2e;
+  --primary-fixed-dim: #bec6e0;
+  --outline-variant: #c6c6cd;
+  --tertiary-container: #0b1c30;
+  --surface-container-lowest: #ffffff;
+  --on-surface: #1b1b1d;
+  --surface-dim: #dcd9db;
+  --background: #fcf8fa;
+  --error: #ba1a1a;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 12px;
+  --spacing-base: 8px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --spacing-xl: 80px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+}
+
+@theme inline {
+  /* Colors */
+  --color-on-tertiary-fixed: var(--on-tertiary-fixed);
+  --color-on-secondary-container: var(--on-secondary-container);
+  --color-secondary-container: var(--secondary-container);
+  --color-secondary: var(--secondary);
+  --color-on-error: var(--on-error);
+  --color-on-primary: var(--on-primary);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-error-container: var(--error-container);
+  --color-on-tertiary-fixed-variant: var(--on-tertiary-fixed-variant);
+  --color-on-primary-fixed: var(--on-primary-fixed);
+  --color-on-primary-fixed-variant: var(--on-primary-fixed-variant);
+  --color-tertiary: var(--tertiary);
+  --color-on-secondary-fixed-variant: var(--on-secondary-fixed-variant);
+  --color-secondary-fixed-dim: var(--secondary-fixed-dim);
+  --color-on-error-container: var(--on-error-container);
+  --color-primary: var(--primary);
+  --color-outline: var(--outline);
+  --color-on-background: var(--on-background);
+  --color-inverse-primary: var(--inverse-primary);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-surface-tint: var(--surface-tint);
+  --color-secondary-fixed: var(--secondary-fixed);
+  --color-primary-fixed: var(--primary-fixed);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-on-tertiary-container: var(--on-tertiary-container);
+  --color-tertiary-fixed: var(--tertiary-fixed);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-inverse-surface: var(--inverse-surface);
+  --color-inverse-on-surface: var(--inverse-on-surface);
+  --color-surface-variant: var(--surface-variant);
+  --color-surface: var(--surface);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-tertiary-fixed-dim: var(--tertiary-fixed-dim);
+  --color-on-tertiary: var(--on-tertiary);
+  --color-on-secondary: var(--on-secondary);
+  --color-surface-container: var(--surface-container);
+  --color-on-secondary-fixed: var(--on-secondary-fixed);
+  --color-surface-bright: var(--surface-bright);
+  --color-primary-container: var(--primary-container);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
+  --color-outline-variant: var(--outline-variant);
+  --color-tertiary-container: var(--tertiary-container);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-on-surface: var(--on-surface);
+  --color-surface-dim: var(--surface-dim);
+  --color-background: var(--background);
+  --color-error: var(--error);
+  
+  /* Spacing */
+  --spacing-xs: var(--spacing-xs);
+  --spacing-sm: var(--spacing-sm);
+  --spacing-base: var(--spacing-base);
+  --spacing-md: var(--spacing-md);
+  --spacing-lg: var(--spacing-lg);
+  --spacing-xl: var(--spacing-xl);
+  --spacing-gutter: var(--spacing-gutter);
+  --spacing-container-max: var(--spacing-container-max);
+  
+  /* Font Family */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Custom scrollbar for clean aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-variant);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--outline-variant);
+}
+
+body {
+  background: var(--background);
+  color: var(--on-surface);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Custom utility classes */
+.input-ring-transition {
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.service-card-hover:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #57dffe;
+  transition: all 0.3s ease;
+}
+
+.service-card-hover:hover .service-icon {
+  color: #57dffe;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.bento-card {
+  background: linear-gradient(145deg, #ffffff, #fcf8fa);
+}
+
+.ambient-shadow {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+}
+
+.widget-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #57dffe;
+}
